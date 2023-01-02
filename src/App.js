@@ -1,28 +1,22 @@
 import React from "react"
+import {      
+  BrowserRouter,  //Used to route between pages
+  Routes,
+  Route
+} from "react-router-dom";
 import Title from "./components/Title"
-import Question from "./components/Question";
-import data from "./data"
+import QuestionPage from "./components/QuestionPage";
 
 //Link to question using routes perhaps
 function App() {
-
-  const questions = data.map(item =>{
-    return(
-      <Question
-        key={item.id}
-        question={item.question}
-        a={item.a}
-        b={item.b}
-        c={item.c}
-        d={item.d}
-        correctAnswer={item.correctAnswer}
-      />
-    )
-  })
   return (
     <div>
-      <Title />
-      {questions}
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Title/>} />
+          <Route exact path="/qpage" element={<QuestionPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
