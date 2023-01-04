@@ -1,6 +1,7 @@
 import React from "react"
 import Question from "./Question"
 import data from "./data"
+import "./quiz.css"
 
 export default function QuestionPage(){
 
@@ -18,5 +19,9 @@ export default function QuestionPage(){
         )
     })
 
-    return <div>{questions}</div>
+    return (
+        <div className="questions-container">
+            <div className="questions">{questions}</div>
+        </div>
+    )
 }

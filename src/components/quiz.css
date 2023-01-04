@@ -1,3 +1,44 @@
-.title{
-    position: center;
+.title-container{
+    width: 100vw;
+    height: 100vh;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    background-color: #98B4D4;
+}
+
+.title {
+    width: 400px;
+    height: 400px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.questions-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    background-color: #98B4D4;;
+}
+
+.questions{
+    margin-top: 10%;
+    text-align: center;
 }
