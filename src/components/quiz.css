@@ -1,3 +1,16 @@
+*{
+    background-color: #98B4D4;
+}
+
+button{
+    background-color: white;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+
 .title-container{
     width: 100vw;
     height: 100vh;
@@ -9,7 +22,6 @@
     right: 0;
 
     margin: auto;
-    background-color: #98B4D4;
 }
 
 .title {
@@ -35,10 +47,17 @@
     right: 0;
 
     margin: auto;
-    background-color: #98B4D4;;
 }
 
 .questions{
     margin-top: 10%;
     text-align: center;
+}
+
+.response-message1{
+    color:green;
+}
+
+.response-message2{
+    color:red;
 }
