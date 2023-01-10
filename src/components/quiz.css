@@ -61,3 +61,29 @@ button:hover{
 .response-message2{
     color:red;
 }
+
+.results-container{
+    width: 100vw;
+    height: 100vh;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.results {
+    width: 400px;
+    height: 400px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
