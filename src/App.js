@@ -3,9 +3,10 @@ import {
   BrowserRouter,  //Used to route between pages
   Routes,
   Route
-} from "react-router-dom";
+} from "react-router-dom"
 import Title from "./components/Title"
-import QuestionPage from "./components/QuestionPage";
+import QuestionPage from "./components/QuestionPage"
+import Results from "./components/Results"
 
 //Link to question using routes perhaps
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Title/>} />
           <Route exact path="/qpage" element={<QuestionPage/>}/>
+          <Route exact path="/res" element={<Results/>}/>
         </Routes>
       </BrowserRouter>
     </div>
