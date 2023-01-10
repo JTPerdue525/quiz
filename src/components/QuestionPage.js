@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import Question from "./Question"
 import data from "./data"
 import "./quiz.css"
@@ -22,6 +23,9 @@ export default function QuestionPage(){
     return (
         <div className="questions-container">
             <div className="questions">{questions}</div>
+            <Link to="/res">
+                <button type="button">See Results</button>
+            </Link>
         </div>
     )
 }
