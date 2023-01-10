@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { getCorrectCount, updateCorrectCount } from "./Results";
 import "./quiz.css"
 
 export default function Question(props){
@@ -10,7 +11,7 @@ export default function Question(props){
     let dChecker = false;
     let [response, setResponse] = useState('None');
 
-    //Definitely a better way to do this, but this will work for now
+    //Defines correct answer in this scope
     if(answer=='a'){
         aChecker = true;
     }
@@ -26,12 +27,14 @@ export default function Question(props){
 
     function correct(checker){
         if(checker==true){
-            //console.log("This is the right answer")
-            setResponse('Correct')
+            //Set state variable to correct if user chooses the right choice           
+            setResponse('Correct');
+            let temp = getCorrectCount(); //gets correctCount
+            updateCorrectCount(temp+1); //updates correctCount allowing correctCount to be saved across each question
         }
         else{
-            //console.log("This is the wrong answer")
-            setResponse('Incorrect')
+            //Sets state variable to incorrect if user chooses the wrong choice
+            setResponse('Incorrect');
         }
     }
 
@@ -50,7 +53,7 @@ export default function Question(props){
         )
     }
     //Displays question and a green correct response
-    else if(response=="Correct"){
+    else if(response=="Correct"){ 
         return(
             <div className="response">
                 <h2>{props.question}</h2>
