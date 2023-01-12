@@ -1,9 +1,11 @@
 *{
     background-color: #98B4D4;
+    overflow-x: hidden;
 }
 
 button{
     background-color: white;
+    font-size: 15px;
 }
 
 button:hover{
@@ -37,11 +39,15 @@ button:hover{
     margin: auto;
 }
 
+.start-game{ /*Start game button*/
+    font-size: 20px;
+}
+
 .questions-container{
     min-height: 100vh;
     min-width: 100vw;
     position: absolute;
-    top:0;
+    top:-10%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -54,12 +60,23 @@ button:hover{
     text-align: center;
 }
 
+.questions-title{
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
 .response-message1{
     color:green;
 }
 
 .response-message2{
     color:red;
+}
+
+.see-results{ /*Results Button Styling*/
+    font-size: 40px;
+    width: 100%;
+    margin-top: 3%;
 }
 
 .results-container{
@@ -86,4 +103,8 @@ button:hover{
     right: 0;
 
     margin: auto;
+}
+
+.retry{
+    font-size:20px;
 }
