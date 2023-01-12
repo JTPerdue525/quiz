@@ -23,7 +23,7 @@ export default function Results(){
             <div className="results">
                 <h1>Your score is {correctCount}/{data.length}</h1>
                 <Link to="/">
-                    <button type="button" onClick={() => {reset()}}>Retry</button>
+                    <button type="button" className="retry" onClick={() => {reset()}}>Retry</button>
                 </Link>
             </div>
         </div>

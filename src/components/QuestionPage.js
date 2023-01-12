@@ -22,9 +22,12 @@ export default function QuestionPage(){
 
     return (
         <div className="questions-container">
-            <div className="questions">{questions}</div>
+            <div className="questions">
+                <h1 className="questions-title">Click on the answers to the following questions.</h1>
+                {questions}
+            </div>
             <Link to="/res">
-                <button type="button">See Results</button>
+                <button type="button" className="see-results">See Results</button>
             </Link>
         </div>
     )

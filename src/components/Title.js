@@ -9,7 +9,7 @@ export default function Title(){
                 <h1>Pop Culture Trivia Game</h1>
                 <h3>Created By: James Perdue</h3>
                 <Link to="/qpage">
-                    <button type="button">Start The Game</button>
+                    <button type="button" className="start-game">Start The Game</button>
                 </Link>
             </div>
         </div>
