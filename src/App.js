@@ -14,7 +14,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Title/>} />
+          <Route exact path="/quiz" element={<Title/>} />
           <Route exact path="/qpage" element={<QuestionPage/>}/>
           <Route exact path="/res" element={<Results/>}/>
         </Routes>
