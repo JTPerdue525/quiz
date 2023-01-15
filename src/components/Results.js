@@ -22,7 +22,7 @@ export default function Results(){
         <div className="results-container">
             <div className="results">
                 <h1>Your score is {correctCount}/{data.length}</h1>
-                <Link to="/">
+                <Link to="/quiz">
                     <button type="button" className="retry" onClick={() => {reset()}}>Retry</button>
                 </Link>
             </div>
