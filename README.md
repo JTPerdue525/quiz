@@ -1,6 +1,6 @@
 # Welcome to My Quiz App Created with React
 
-The purpose of this project is to create a quiz game that works in the browser. This project was built using React, HTML, CSS, and vanilla Javascript. 
+The purpose of this project is to create a quiz game that works in the browser. This project was built using React, HTML, and CSS
 
 ## Features
 
